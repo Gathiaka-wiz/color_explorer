@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Explorer</title>
+  <link href="/output.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-purple-500 via-purple-700 to-purple-900 bg-no-repeat bg-cover min-h-screen text-white scrollbar-hide" style="scrollbar-width: none; -ms-overflow-style: none;">
+  <header class="flex flex-col items-center  h-dvh gap-y-20" id="Home" >
+      <nav class="flex flex-row gap-4 mt-4 mb-4 bg-white rounded-lg p-4 shadow-lg w-3/12 justify-around align-middle  position-fixed top-0 z-10">
+        <a href="#Home" class="font-medium text-purple-950 hover:underline cursor-pointer" >Home</a>
+        <a href="#Explorer" class="font-medium text-purple-950 hover:underline cursor-pointer" >Explorer</a>
+      </nav>
+
+      <section class="flex flex-row w-2/3 align-middle justify-center gap-5 " >
+        <aside class="flex-1/2 flex flex-col items-center justify-center w-1/2">
+          <h1 class="font-black font-mono text-4xl" >Let your colors run wild</h1>
+          <p class="font-medium text-white w-full " >
+            <span class="text-yellow-500" >Pick</span> the <span class="text-yellow-500" >perfect</span> color in seconds - <span class="text-yellow-500" >explore</span>, <span class="text-yellow-500" >save</span> and <span class="text-yellow-500" >copy</span> your favorite shades with <span class="text-yellow-500" >effortlessly</span>.
+          </p>
+        </aside>
+        <aside class="w-1/2">
+          <div class="grid grid-cols-6 gap-2 w-full h-32 sm:h-40 md:h-56">
+            <div class="bg-red-500 h-full w-full rounded-lg"></div>
+            <div class="bg-orange-500 h-full w-full rounded-lg"></div>
+            <div class="bg-yellow-400 h-full w-full rounded-lg"></div>
+            <div class="bg-green-500 h-full w-full rounded-lg"></div>
+            <div class="bg-blue-500 h-full w-full rounded-lg"></div>
+            <div class="bg-pink-600 h-full w-full rounded-lg"></div>
+          </div>
+        </aside>
+      </section>
+
+      <section>
+        <button class="bg-white w-full px-5 py-2 rounded-xl font-serif tracking-wider hover:shadow-2xl hover:shadow-stone-950 transition-all duration-300 cursor-pointer">
+          <a href="#Explorer" class="font-medium text-purple-950">Explorer</a>
+        </button>
+      </section>
+  </header>
+
+  <main class="w-screen h-screen flex flex-col items-center justify-center" id="Explorer">
+    <h2 class="text-3xl font-bold text-center mt-10 mb-5">Color Explorer</h2>
+    <p class="text-center mb-10">Discover and save your favorite colors</p>
+    <div class="grid grid-cols-6 gap-2 w-1/2 h-60 sm:h-40 md:h-56 text-gray-50 ">
+      <div class="bg-red-500 h-full w-full rounded-lg flex flex-col align-base justify-end   ">
+        <p class="mx-auto text-gray-200 font-mono" id="value" ></p>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-auto mb-4 cursor-pointer " fill="none" viewBox="0 0 24 24" stroke="currentColor" id="copy_icon"> >
+          <rect x="9" y="9" width="13" height="13" rx="2" ry="2" stroke="currentColor" stroke-width="2" fill="none"/>
+          <rect x="3" y="3" width="13" height="13" rx="2" ry="2" stroke="currentColor" stroke-width="2" fill="none"/>
+        </svg>
+      </div>
+      <div class="bg-pink-500 h-full w-full rounded-lg flex flex-col align-base justify-end   ">
+        <p class="mx-auto text-gray-200 font-mono" id="value" ></p>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-auto mb-4 cursor-pointer " fill="none" viewBox="0 0 24 24" stroke="currentColor" id="copy_icon"> >
+          <rect x="9" y="9" width="13" height="13" rx="2" ry="2" stroke="currentColor" stroke-width="2" fill="none"/>
+          <rect x="3" y="3" width="13" height="13" rx="2" ry="2" stroke="currentColor" stroke-width="2" fill="none"/>
+        </svg>
+      </div>
+      <div class="bg-blue-500 h-full w-full rounded-lg flex flex-col align-base justify-end   ">
+        <p class="mx-auto text-gray-200 font-mono" id="value" ></p>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-auto mb-4 cursor-pointer " fill="none" viewBox="0 0 24 24" stroke="currentColor" id="copy_icon"> >
+          <rect x="9" y="9" width="13" height="13" rx="2" ry="2" stroke="currentColor" stroke-width="2" fill="none"/>
+          <rect x="3" y="3" width="13" height="13" rx="2" ry="2" stroke="currentColor" stroke-width="2" fill="none"/>
+        </svg>
+      </div>
+      <div class="bg-orange-500 h-full w-full rounded-lg flex flex-col align-base justify-end   ">
+        <p class="mx-auto text-gray-200 font-mono" id="value" ></p>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-auto mb-4 cursor-pointer " fill="none" viewBox="0 0 24 24" stroke="currentColor" id="copy_icon"> >
+          <rect x="9" y="9" width="13" height="13" rx="2" ry="2" stroke="currentColor" stroke-width="2" fill="none"/>
+          <rect x="3" y="3" width="13" height="13" rx="2" ry="2" stroke="currentColor" stroke-width="2" fill="none"/>
+        </svg>
+      </div>
+      <div class="bg-yellow-500 h-full w-full rounded-lg flex flex-col align-base justify-end   ">
+        <p class="mx-auto text-gray-200 font-mono" id="value" ></p>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-auto mb-4 cursor-pointer " fill="none" viewBox="0 0 24 24" stroke="currentColor" id="copy_icon"> >
+          <rect x="9" y="9" width="13" height="13" rx="2" ry="2" stroke="currentColor" stroke-width="2" fill="none"/>
+          <rect x="3" y="3" width="13" height="13" rx="2" ry="2" stroke="currentColor" stroke-width="2" fill="none"/>
+        </svg>
+      </div>
+      <div class="bg-green-500 h-full w-full rounded-lg flex flex-col align-base justify-end   ">
+        <p class="mx-auto text-gray-200 font-mono" id="value" ></p>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-auto mb-4 cursor-pointer " fill="none" viewBox="0 0 24 24" stroke="currentColor" id="copy_icon"> >
+          <rect x="9" y="9" width="13" height="13" rx="2" ry="2" stroke="currentColor" stroke-width="2" fill="none"/>
+          <rect x="3" y="3" width="13" height="13" rx="2" ry="2" stroke="currentColor" stroke-width="2" fill="none"/>
+        </svg>
+      </div>
+    </div>
+    <section>
+        <button class="bg-white w-full font-medium text-purple-950 px-5 py-2 mt-5 rounded-xl font-serif tracking-wider hover:shadow-2xl hover:shadow-stone-950 transition-all duration-300 cursor-pointer" id="generate_button">
+          Generate
+        </button>
+      </section>
+  </main>
+
+  <style>
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .scrollbar-hide {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;     /* Firefox */
+    }
+  </style>
+
+  <script src="app.js"></script>
+</body>
+</body>
+</html>
