@@ -4,7 +4,9 @@
   "description": "Color explorer application",
   "main": "app.js",
   "scripts": {
-    "dev": "clear && tailwindcss -i input.css -o output.css --watch"
+    "dev": "clear && tailwindcss -i input.css -o output.css --watch",
+    "build": "npm install ",
+    "start": "tailwindcss -i input.css -o output.css --minify "
   },
   "repository": {
     "type": "git",
